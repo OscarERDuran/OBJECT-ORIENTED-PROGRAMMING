@@ -28,3 +28,21 @@ Desafíos enfrentados
 Para empezar el Proyecto se utilizó Intellij IDEA y luego se pasó a NetBeans, pero el proyecto abierto en NetBeans no funcionó, con la actualización de librerías se solucionó el inconveniente.
 Gestión de relaciones entre clases: Se resolvió usando listas de objetos como composición.
 Modularidad: Se implementaron métodos `get` y `set` para facilitar encapsulamiento y pruebas unitarias.
+
+Ejecuccion de metodos y pruebas unitarias
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/Herencia_Main.png)
+
+Creacion de nueva clase producto Digital
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/Producto_digital.png)
+
+Creacion de nueva clase producto fisico
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/Producto_fisico.png)
+
+Creacion de nueva clase administrador
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/Administrador.png)
+
+Creacion de nueva clase cliente
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/Cliente.png)
+
+Compilacion del proyecto
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/Compilacion2.png)
