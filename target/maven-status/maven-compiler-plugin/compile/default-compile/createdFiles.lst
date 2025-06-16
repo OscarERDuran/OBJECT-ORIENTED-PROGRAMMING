@@ -1,4 +1,8 @@
 com\mycompany\e\commercetec\Usuario.class
+com\mycompany\e\commercetec\Administrador.class
 com\mycompany\e\commercetec\Carrito.class
+com\mycompany\e\commercetec\ProductoFisico.class
+com\mycompany\e\commercetec\Cliente.class
 com\mycompany\e\commercetec\ECommerceTec.class
+com\mycompany\e\commercetec\ProductoDigital.class
 com\mycompany\e\commercetec\Producto.class

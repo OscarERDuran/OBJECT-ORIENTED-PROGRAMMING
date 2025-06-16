@@ -34,5 +34,42 @@ public static void main(String[] args) {
 
         // Mostrar el total del carrito
         System.out.println("\nTotal del carrito: $" + carrito.getTotal());
+    
+        
+        
+        // ==========================
+        // Nuevas pruebas con herencia
+        // ==========================
+
+        // Productos especializados
+        ProductoFisico fisico = new ProductoFisico(10, "Teclado", "Teclado mecánico", 45000, 20, 0.8, "45x15x3cm");
+        ProductoDigital digital = new ProductoDigital(11, "Curso Java", "Curso online de Java", 99000, 100, "MP4", 1500);
+
+        // Usuarios especializados
+        Cliente cliente = new Cliente(2, "Ana López", "ana.lopez@example.com", "clave456");
+        Administrador admin = new Administrador(3, "Carlos Admin", "admin@example.com", "adminpass");
+
+        // Cliente compra productos
+        cliente.agregarCompra(fisico);
+        cliente.agregarCompra(digital);
+
+        // Admin cambia el precio de un producto físico
+        admin.establecerPromocion(fisico, 39999);
+
+        // Mostrar información de Cliente
+        System.out.println("\nCliente: " + cliente.getNombre());
+        System.out.println("Historial de compras:");
+        for (Producto p : cliente.getHistorialCompras()) {
+            System.out.println("- " + p.getNombre() + " ($" + p.getPrecio() + ")");
+        }
+
+        // Mostrar información de Admin y producto modificado
+        System.out.println("\nAdministrador: " + admin.getNombre());
+        System.out.println("Nuevo precio del producto físico '" + fisico.getNombre() + "': $" + fisico.getPrecio());
+
+        // Mostrar atributos específicos
+        System.out.println("\nAtributos específicos:");
+        System.out.println("Producto físico - Peso: " + fisico.getPesoKg() + "kg, Dimensiones: " + fisico.getDimensiones());
+        System.out.println("Producto digital - Formato: " + digital.getFormatoArchivo() + ", Tamaño: " + digital.getTamanoMB() + "MB");
     }
 }
