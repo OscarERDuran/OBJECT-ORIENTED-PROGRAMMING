@@ -12,4 +12,10 @@ public class ProductoDigital extends Producto {
 
     public String getFormatoArchivo() { return formatoArchivo; }
     public double getTamanoMB() { return tamanoMB; }
+
+    @Override
+    public void mostrarDetalle() {
+        System.out.println("Producto Digital: " + nombre + " - $" + precio +
+                " | Formato: " + formatoArchivo + " | Tamaño: " + tamanoMB + "MB");
+    }
 }

@@ -1,52 +1,34 @@
-
 package com.mycompany.e.commercetec;
-
-/**
- *
- * @author Admin
- */
-// Clase Carrito
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Carrito {
-    private List<Producto> productos;
-    private double total;
+    private List<Producto> productos = new ArrayList<>();
 
-    // Constructor
-    public Carrito() {
-        this.productos = new ArrayList<>();
-        this.total = 0.0;
-    }
-
-    // Método para añadir un producto al carrito
     public void agregarProducto(Producto producto) {
         productos.add(producto);
-        calcularTotal();
     }
 
-    // Método para remover un producto del carrito
-    public void removerProducto(Producto producto) {
-        productos.remove(producto);
-        calcularTotal();
+    // Sobrecarga: agregar por ID (simulación)
+    public void agregarProducto(int id) {
+        productos.add(new Producto(id, "ProductoGenérico", "Descripción", 1000, 1));
     }
 
-    // Método para calcular el total del carrito
-    private void calcularTotal() {
-        total = 0.0;
-        for (Producto producto : productos) {
-            total += producto.getPrecio();
-        }
+    // Sobrecarga: agregar por nombre y precio
+    public void agregarProducto(String nombre, double precio) {
+        productos.add(new Producto(0, nombre, "Sin descripción", precio, 1));
     }
 
-    // Método para obtener el total
-    public double getTotal() {
-        return total;
-    }
-
-    // Método para obtener la lista de productos
     public List<Producto> getProductos() {
         return productos;
+    }
+
+    public double getTotal() {
+        double total = 0;
+        for (Producto p : productos) {
+            total += p.getPrecio();
+        }
+        return total;
     }
 }

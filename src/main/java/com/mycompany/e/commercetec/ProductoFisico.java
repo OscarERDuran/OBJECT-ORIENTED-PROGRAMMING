@@ -12,4 +12,10 @@ public class ProductoFisico extends Producto {
 
     public double getPesoKg() { return pesoKg; }
     public String getDimensiones() { return dimensiones; }
+
+    @Override
+    public void mostrarDetalle() {
+        System.out.println("Producto Físico: " + nombre + " - $" + precio +
+                " | Peso: " + pesoKg + "kg | Dimensiones: " + dimensiones);
+    }
 }
