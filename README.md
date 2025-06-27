@@ -46,3 +46,15 @@ Creacion de nueva clase cliente
 
 Compilacion del proyecto
 ![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/Compilacion2.png)
+
+Polimorfismo
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/Polimorfismo.png)
+
+Sobrecarga de metodos
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/Sobrecarga%20de%20metodos.png)
+
+Sobreescritura de metodos 
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/Sobreescritura%20de%20metodas.png)
+
+Sobreescritura de metodos 2
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/Sobreescritura%20de%20metodas2.png)
