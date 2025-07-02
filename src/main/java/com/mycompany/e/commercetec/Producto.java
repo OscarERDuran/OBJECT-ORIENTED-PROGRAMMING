@@ -1,28 +1,27 @@
 package com.mycompany.e.commercetec;
 
-public class Producto {
-    protected int id;
-    protected String nombre;
-    protected String descripcion;
-    protected double precio;
-    protected int stock;
+public class Producto extends Item {
+    private int stock;
 
     public Producto(int id, String nombre, String descripcion, double precio, int stock) {
-        this.id = id;
-        this.nombre = nombre;
-        this.descripcion = descripcion;
-        this.precio = precio;
-        this.stock = stock;
+        super(id, nombre, descripcion, precio);
+        setStock(stock);
     }
 
-    public int getId() { return id; }
-    public String getNombre() { return nombre; }
-    public String getDescripcion() { return descripcion; }
-    public double getPrecio() { return precio; }
+    // Getter
     public int getStock() { return stock; }
-    public void setPrecio(double precio) { this.precio = precio; }
 
+    // Setter con validación
+    public void setStock(int stock) {
+        if (stock >= 0) {
+            this.stock = stock;
+        } else {
+            throw new IllegalArgumentException("El stock no puede ser negativo");
+        }
+    }
+
+    @Override
     public void mostrarDetalle() {
-        System.out.println("Producto: " + nombre + " - $" + precio);
+        System.out.println("Producto: " + getNombre() + " - $" + getPrecio() + " (Stock: " + stock + ")");
     }
 }

@@ -2,16 +2,15 @@ package com.mycompany.e.commercetec;
 
 import java.util.List;
 
-public class ECommerceTec {
-
+public class Main {
     public static void main(String[] args) {
         try {
             // Ejemplos de encapsulamiento y validaciones
             System.out.println("=== Pruebas de Encapsulamiento y Validaciones ===");
             
             // Crear productos con validaciones
-            ProductoFisico fisico = new ProductoFisico(1, "Laptop", "Laptop", 1500000, 10, 2.5, "35x25x3cm");
-            ProductoDigital digital = new ProductoDigital(2, "Curso", "Curso completo", 150000, 100, "MP4", 2048);
+            ProductoFisico fisico = new ProductoFisico(1, "Laptop", "Laptop gaming", 1500000, 10, 2.5, "35x25x3cm");
+            ProductoDigital digital = new ProductoDigital(2, "Curso Java", "Curso completo", 150000, 100, "MP4", 2048);
             
             // Crear usuario con validaciones
             Usuario usuario = new Usuario(1, "Juan Pérez", "juan.perez@email.com", "password123");
@@ -50,4 +49,3 @@ public class ECommerceTec {
         }
     }
 }
-
