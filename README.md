@@ -58,3 +58,23 @@ Sobreescritura de metodos
 
 Sobreescritura de metodos 2
 ![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/Sobreescritura%20de%20metodas2.png)
+
+Compilacion de la validacion 
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/Compilacion_validacion1.png)
+
+Compilacion mostrando cambios
+![Logo](http://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/Compilacion_validacion.png)
+
+Clase Usuario
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/usuario.png)
+
+Clase producto digital
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/Producto_digital1.png)
+
+Clase producto fisico
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/Producto_fisico1.png)
+
+Clase producto
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/producto.png)
+
+
