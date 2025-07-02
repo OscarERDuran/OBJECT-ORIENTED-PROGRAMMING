@@ -63,7 +63,7 @@ Compilacion de la validacion
 ![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/Compilacion_validacion1.png)
 
 Compilacion mostrando cambios
-![Logo](http://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/Compilacion_validacion.png)
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/Compilacion_validacion.png)
 
 Clase Usuario
 ![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/usuario.png)
