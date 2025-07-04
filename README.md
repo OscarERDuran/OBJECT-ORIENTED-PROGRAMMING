@@ -77,4 +77,25 @@ Clase producto fisico
 Clase producto
 ![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/producto.png)
 
+Compilacion Interfaces
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/Compilacion_interfaces.png)
+
+Gestor inventario
+![Logo](http://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/gestor_inventario.png)
+
+Gestor inventario fisico
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/gestor_inventario_fisico.png)
+
+Gestor inventario digital
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/gestor_inventario_digital.png)
+
+Proceso pago
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/Proceso_pago.png)
+
+Proceso pago tarjeta
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/Proceso_pago_tarjeta.png)
+
+Proceso pago paypal
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/PagoPayPal.png)
+
 
