@@ -52,7 +52,7 @@ public class ECommerceTec {
 
 
     
-// =================================
+        // =================================
         // PRUEBAS DE INTERFACES Y CLASES ABSTRACTAS
         // =================================
         
@@ -102,7 +102,6 @@ public class ECommerceTec {
             }
         }
 
-    }
 
     
 
@@ -202,5 +201,6 @@ public class ECommerceTec {
         gestorEventos.notificarEvento("STOCK_BAJO", "Producto: Laptop - Stock restante: 2");
     
     }
+    
 }
 
