@@ -98,4 +98,26 @@ Proceso pago tarjeta
 Proceso pago paypal
 ![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/PagoPayPal.png)
 
+Compilacion Patrones
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/CompilacionPatrones.png)
 
+ConfiguracionSistema
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/ConfiguracionSistema.png)
+
+FabricaEntidades
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/FabricaEntidades.png)
+
+ObservadorEvento
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/ObservadorEventos.png)
+
+GestorEvento
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/gestorEvento.png)
+
+NotificadorUI
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/NotificadorUI.png)
+
+NotificadorEmail
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/NotificadorEmail.png)
+
+NotificadorInventario
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/NotificadorInventario.png)
