@@ -81,7 +81,7 @@ Compilacion Interfaces
 ![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/Compilacion_interfaces.png)
 
 Gestor inventario
-![Logo](http://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/gestor_inventario.png)
+![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/gestor_inventario.png)
 
 Gestor inventario fisico
 ![Logo](https://github.com/OscarERDuran/OBJECT-ORIENTED-PROGRAMMING/blob/main/Readme/gestor_inventario_fisico.png)
