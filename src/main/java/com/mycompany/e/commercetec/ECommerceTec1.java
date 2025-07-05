@@ -1,6 +1,4 @@
-
 package com.mycompany.e.commercetec;
-
 
 import java.util.ArrayList;
 import java.util.List;
