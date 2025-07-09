@@ -1,15 +1,20 @@
 com\mycompany\e\commercetec\Item.class
 com\mycompany\e\commercetec\GestorEventos.class
+com\mycompany\e\commercetec\exceptions\UsuarioNoValidoException.class
 com\mycompany\e\commercetec\Cliente.class
+com\mycompany\e\commercetec\exceptions\ProductoNoEncontradoException.class
 com\mycompany\e\commercetec\Producto.class
 com\mycompany\e\commercetec\GestorInventarioDigital.class
 com\mycompany\e\commercetec\ObservadorEvento.class
 com\mycompany\e\commercetec\Carrito.class
 com\mycompany\e\commercetec\GestorInventarioFisico.class
 com\mycompany\e\commercetec\ECommerceTec1.class
+com\mycompany\e\commercetec\exceptions\PagoFallidoException.class
 com\mycompany\e\commercetec\ECommerceTec.class
 com\mycompany\e\commercetec\ProductoDigital.class
+com\mycompany\e\commercetec\exceptions\TarjetaInvalidaException.class
 com\mycompany\e\commercetec\Usuario.class
+com\mycompany\e\commercetec\exceptions\InventarioInsuficienteException.class
 com\mycompany\e\commercetec\NotificadorEmail.class
 com\mycompany\e\commercetec\FabricaEntidades$TipoProducto.class
 com\mycompany\e\commercetec\NotificadorUI.class
@@ -23,3 +28,4 @@ com\mycompany\e\commercetec\Administrador.class
 com\mycompany\e\commercetec\NotificadorInventario.class
 com\mycompany\e\commercetec\PagoPayPal.class
 com\mycompany\e\commercetec\ProcesoPago.class
+com\mycompany\e\commercetec\exceptions\ECommerceException.class

@@ -1,5 +1,6 @@
 package com.mycompany.e.commercetec;
 
+import com.mycompany.e.commercetec.exceptions.*;
 import java.util.Random;
 
 public class PagoTarjeta implements ProcesoPago {
@@ -7,54 +8,76 @@ public class PagoTarjeta implements ProcesoPago {
     private String nombreTitular;
     private String fechaVencimiento;
     
-    public PagoTarjeta(String numeroTarjeta, String nombreTitular, String fechaVencimiento) {
+    public PagoTarjeta(String numeroTarjeta, String nombreTitular, String fechaVencimiento) throws TarjetaInvalidaException {
         this.numeroTarjeta = numeroTarjeta;
         this.nombreTitular = nombreTitular;
         this.fechaVencimiento = fechaVencimiento;
+        validarTarjeta();
     }
     
-    @Override
-    public boolean iniciarPago(double monto, String detallesPago) {
-        System.out.println("=== PAGO CON TARJETA ===");
-        System.out.println("Titular: " + nombreTitular);
-        System.out.println("Tarjeta: ****" + numeroTarjeta.substring(numeroTarjeta.length() - 4));
-        System.out.println("Monto: $" + monto);
-        System.out.println("Detalles: " + detallesPago);
+    private void validarTarjeta() throws TarjetaInvalidaException {
+        if (numeroTarjeta == null || numeroTarjeta.length() != 16) {
+            throw new TarjetaInvalidaException(numeroTarjeta, "Número de tarjeta debe tener 16 dígitos");
+        }
         
-        // Simulación de validación de tarjeta
-        if (validarTarjeta()) {
-            System.out.println("Tarjeta válida. Procesando pago...");
-            return true;
-        } else {
-            System.out.println("Error: Tarjeta inválida o fondos insuficientes");
-            return false;
+        if (nombreTitular == null || nombreTitular.trim().isEmpty()) {
+            throw new TarjetaInvalidaException(numeroTarjeta, "Nombre del titular no puede estar vacío");
+        }
+        
+        if (fechaVencimiento == null || !fechaVencimiento.matches("\\d{2}/\\d{2}")) {
+            throw new TarjetaInvalidaException(numeroTarjeta, "Formato de fecha inválido (debe ser MM/YY)");
         }
     }
     
     @Override
-    public boolean verificarPago(String transactionId) {
-        System.out.println("Verificando pago con tarjeta - ID: " + transactionId);
-        // Simulación de verificación
-        return new Random().nextBoolean();
+    public boolean iniciarPago(double monto, String detallesPago) throws PagoFallidoException {
+        String transactionId = "TXN" + System.currentTimeMillis();
+        
+        if (monto <= 0) {
+            throw new PagoFallidoException(transactionId, "Tarjeta", monto, "El monto debe ser positivo");
+        }
+        
+        System.out.println("=== PAGO CON TARJETA ===");
+        System.out.println("Titular: " + nombreTitular);
+        System.out.println("Tarjeta: ****" + numeroTarjeta.substring(12));
+        System.out.println("Monto: $" + monto);
+        
+        // Simulación de fallas aleatorias
+        Random random = new Random();
+        if (random.nextInt(10) < 2) { // 20% de probabilidad de falla
+            throw new PagoFallidoException(transactionId, "Tarjeta", monto, "Fondos insuficientes");
+        }
+        
+        System.out.println("Pago iniciado exitosamente");
+        return true;
     }
     
     @Override
-    public boolean confirmarPago(String transactionId) {
-        System.out.println("Confirmando pago con tarjeta - ID: " + transactionId);
+    public boolean verificarPago(String transactionId) throws PagoFallidoException {
+        if (transactionId == null || transactionId.trim().isEmpty()) {
+            throw new PagoFallidoException(transactionId, "Tarjeta", 0.0, "ID de transacción inválido");
+        }
+        
+        System.out.println("Verificando pago con tarjeta - ID: " + transactionId);
+        return true;
+    }
+    
+    @Override
+    public boolean confirmarPago(String transactionId) throws PagoFallidoException {
+        if (!verificarPago(transactionId)) {
+            throw new PagoFallidoException(transactionId, "Tarjeta", 0.0, "Verificación de pago falló");
+        }
+        
         System.out.println("Pago confirmado exitosamente");
         return true;
     }
     
     @Override
-    public void procesarReembolso(String transactionId, double monto) {
-        System.out.println("Procesando reembolso a tarjeta");
-        System.out.println("ID Transacción: " + transactionId);
-        System.out.println("Monto a reembolsar: $" + monto);
-        System.out.println("Reembolso procesado. Aparecerá en 3-5 días hábiles");
-    }
-    
-    private boolean validarTarjeta() {
-        // Simulación de validación
-        return numeroTarjeta.length() == 16 && !fechaVencimiento.isEmpty();
+    public void procesarReembolso(String transactionId, double monto) throws PagoFallidoException {
+        if (monto <= 0) {
+            throw new PagoFallidoException(transactionId, "Tarjeta", monto, "Monto de reembolso inválido");
+        }
+        
+        System.out.println("Procesando reembolso: $" + monto);
     }
 }
